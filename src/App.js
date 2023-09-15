@@ -1,11 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import Textform from './components/TextForm';
 function App() {
   return (
     <>
-  <Navbar></Navbar>
-  <h1>hhk</h1>
+  <Navbar title="ritik App"></Navbar>
+  <div className="container">
+  <Textform title = "text Ritik" heading = "Write Your Text Here"></Textform>
+  </div>
   </>
   );
 }
