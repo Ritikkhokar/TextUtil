@@ -10,7 +10,7 @@ export default function Textform(props) {
         // console.log("Upper Case Button clicked");
        
         setText(event.target.value)
-        console.log("characters: " + ( [text.match(/ /g)].length));
+        // console.log("characters: " + ( text.match(/ /g) ? text.match(/ /g).length : 0));
     }
     let [text,setText] = useState("text is setup by set text function in TextForm component");
   return (
@@ -19,7 +19,7 @@ export default function Textform(props) {
   <textarea className="forNamem-control" onChange={handleOnChange} value = {text}id="myBox" rows="10" cols="100"></textarea>
   <button type="button" onClick = {handleOnClick}class="btn btn-primary convert-upper-case-btn">{props.title}</button>
   <h1>Your Text Summary</h1>
-  <p>words: {text.split(" ").length} and characters: {text.length - [text.matchAll(" ")].length}</p>
+  <p>words: {text.split(" ").length} and characters: {text.length - ( text.match(/ /g) ? text.match(/ /g).length : 0)}</p>
 </div>
   )
 }
