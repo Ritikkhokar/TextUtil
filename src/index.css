@@ -1,0 +1,10 @@
+.text-form{
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.convert-upper-case-btn{
+  margin-top: 1%;
+  width: auto;
+}
