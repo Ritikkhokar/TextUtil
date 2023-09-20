@@ -2,7 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Textform from './components/TextForm';
-import UpperCaseButton from './components/UpperCaseButton';
+// import UpperCaseButton from './components/UpperCaseButton';
 function App() {
   return (
     <>

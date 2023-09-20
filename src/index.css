@@ -4,7 +4,12 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.convert-upper-case-btn{
-  margin-top: 1%;
+.textform-btn{
+  margin: 1%;
   width: auto;
+}
+.button-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
